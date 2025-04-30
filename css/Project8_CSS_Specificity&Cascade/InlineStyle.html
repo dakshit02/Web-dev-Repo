@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity 3</title>
+    <style>
+        #d1 {
+            color: green;
+        }
+
+        .c1 {
+            color: red;
+        }
+
+        /* Here inline style will winn over id and class because its specificity is 1000 */
+    </style>
+</head>
+
+<body>
+    <h1 class="c1" id="d1" style="color: blueviolet;">This is all about Secificity</h1>
+</body>
+
+</html>

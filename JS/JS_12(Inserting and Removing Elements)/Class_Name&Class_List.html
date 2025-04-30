@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassName & ClassList</title>
+    <style>
+        .red
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box ">BOX 1</div>
+        <div class="box">BOX 2</div>
+    </div>
+
+    <script>
+
+        //classList
+        console.log(document.querySelector(".container").classList);
+        
+        //classList.add
+        document.querySelector(".container").classList.add("yellow");
+
+        //classList.remove
+        document.querySelector(".container").classList.remove("yellow");
+
+        //classList.contains()
+        console.log(document.querySelector(".container").classList.contains("red"));
+        console.log(document.querySelector(".container").classList.contains("yellow"));
+
+        //className
+        console.log(document.querySelector(".container").className);
+
+        //toggle (agar on hai to off kardega agar off hai to on kardega)
+        document.querySelector(".container").classList.toggle("red");
+    </script>
+</body>
+</html>

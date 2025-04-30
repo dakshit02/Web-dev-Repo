@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallback</title>
+    <style>
+        :root {
+            --color: red;
+            --backcolor: blue;
+        }
+
+        .d1 {
+            background-color: var(--backcolor);
+            color: var(--color1, white);
+            /*this is fall back color white since color1 does not exists white color will be used */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur reiciendis ab magni nam quasi, veniam
+        esse, obcaecati debitis iste corporis tenetur nobis exercitationem. Repellendus dicta, voluptatibus consequuntur
+        assumenda nihil asperiores saepe fuga libero deleniti harum deserunt expedita sapiente, aspernatur beatae eum
+        iste magnam repellat fugiat rerum ullam eius placeat quis, odit necessitatibus? Eum quae quod libero.
+    </div>
+</body>
+
+</html>

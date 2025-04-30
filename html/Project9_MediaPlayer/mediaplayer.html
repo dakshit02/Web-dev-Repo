@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>HTML Media Player</h1>
+    </head>
+    <hr>
+    <main>
+        <div>
+            <u><b>Video Section</b></u>
+        </div>
+        <video src="SampleVideo_720x480_1mb.mp4" controls autoplay muted width="350"></video>
+        <video src="SampleVideo_1280x720_2mb.mp4" controls autoplay muted width="350"></video>
+        <video src="SampleVideo_1280x720_5mb.mp4" controls autoplay muted width="350"></video>
+        <video src="SampleVideo_1280x720_10mb.mp4" controls autoplay muted width="350"></video>
+        <video src="SampleVideo_1280x720_20mb.mp4" controls autoplay muted width="350"></video>
+        <video src="SampleVideo_1280x720_30mb.mp4" controls autoplay muted width="350"></video>
+        <br>
+        <i>ABOUT THE VIDEO</i>
+        <table>
+            <thead>
+                <th>Video</th>
+                <th>Length</th>
+                <th>Size</th>
+            </thead>
+
+            <tbody>
+                <td>1</td>
+                <td>0:05</td>
+                <td>1mb</td>
+            </tbody>
+            <tbody>
+                <td>2</td>
+                <td>0:13</td>
+                <td>2mb</td>
+            </tbody>
+            <tbody>
+                <td>3</td>
+                <td>0:29</td>
+                <td>5mb</td>
+            </tbody>
+            <tbody>
+                <td>4</td>
+                <td>1:02</td>
+                <td>10mb</td>
+            </tbody>
+            <tbody>
+                <td>5</td>
+                <td>1:57</td>
+                <td>20mb</td>
+            </tbody>
+            <tbody>
+                <td>6</td>
+                <td>2:50</td>
+                <td>30mb</td>
+            </tbody>
+        </table>
+
+        <div>
+            <u><b>Audio Section</b></u>
+        </div>
+
+
+        <audio src="Free_Test_Data_100KB_MP3.mp3" controls></audio>
+        <audio src="Free_Test_Data_500KB_MP3.mp3" controls></audio>
+        <audio src="Free_Test_Data_1MB_MP3.mp3" controls></audio>
+        <audio src="Free_Test_Data_2MB_MP3.mp3" controls></audio>
+        <audio src="Free_Test_Data_5MB_MP3.mp3" controls></audio>
+        <audio src="Free_Test_Data_1OMB_MP3.mp3" controls></audio>
+        <div>
+            <i>ABOUT THE AUDIO</i>
+        </div>
+        <table>
+            <tr>
+                <th>Audio</th>
+                <th>Length</th>
+                <th>Size</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0:03</td>
+                <td>100kb</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0:20</td>
+                <td>500kb</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>0:43</td>
+                <td>1mb</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1:26</td>
+                <td>2mb</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>3:36</td>
+                <td>5mb</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7:13</td>
+                <td>10mb</td>
+            </tr>
+        </table>
+
+        <h4><label for="vf">Which Video/ Audio was the best?</label></h4>
+
+        <select name="videofeeback" id="vf">
+            <option value="video1">Video1</optVon>
+            <option value="video2">Video2</option>
+            <option value="video3">Video3</option>
+            <option value="video4">Video4</option>
+            <option value="video5">Video5</option>
+            <option value="video6">Video6</option>
+        </select>
+        <select name="audiofeeback" id="vf">
+            <option value="Audio1">Audio1</optVon>
+            <option value="Audio2">Audio2</option>
+            <option value="Audio3">Audio3</option>
+            <option value="Audio4">Audio4</option>
+            <option value="Audio5">Audio5</option>
+            <option value="Audio6">Audio6</option>
+        </select>
+        
+
+
+
+    </main>
+    <hr>
+    <footer>
+        <b>DID YOU LIKE THE MEDIA PLAYER?</b>
+        <ul>
+            <li>0 - VERY POOR</li>
+            <li>1 - POOR</li>
+            <li>2 - GOOD</li>
+            <li>3 - VERY GOOD</li>
+        </ul>
+        <input type="radio" id="Very Poor" name="like_dislike" value="0">
+        <label for="Very Poor">0</label>
+        <input type="radio" id="Poor" name="like_dislike" value="1">
+        <label for="Poor">1</label>
+        <input type="radio" id="Very Good" name="like_dislike" value="2">
+        <label for="Very Good">2</label>
+        <input type="radio" id="Good" name="like_dislike" value="3">
+        <label for="Good">3</label>
+
+
+        <div>
+            <input type="checkbox" id="ck_1">
+            <label for="ck_1">Subscribe the Page</label>
+        </div>
+        <br>
+        <label for="comment_1">Tell us your opinion</label>
+        <textarea name="comment" id="comment_1" rows="4" col="50">Enter your text here!</textarea>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>

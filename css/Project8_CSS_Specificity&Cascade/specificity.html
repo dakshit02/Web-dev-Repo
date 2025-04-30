@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+
+        *{
+            color: grey;
+        }
+        #title
+        {
+            color: red;
+        }
+        .h1
+        {
+            color: blue;
+        }
+        h1{
+            color: pink;
+        }
+        
+        /* Specificity order
+
+        Inline Style> ID selector >Class or attribute Selector >Element Selector> Universal Selector
+        If there is a specificity tie then the rule that appears last in CSS is applied*/
+        /* Calculating Specificity
+
+        Universal Selector = 0 
+        Element Selector and pseudo Selector = 1
+        Class Selctor and pseudo Selctor = 10
+        ID Selector = 100
+        Inline Selector = 1000*/
+    </style>
+</head>
+<body>
+    <h1 id="title" class="h1" style="color: purple;">This is Dakshit</h1>
+</body>
+</html>

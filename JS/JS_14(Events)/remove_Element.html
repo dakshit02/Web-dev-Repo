@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Element</title>
+    <style>
+        .box {
+            padding: 14px;
+            background-color: rgb(222, 142, 37);
+            color: white
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="conatainer">
+        <div class="box">
+            this is a box !
+        </div>
+    </div>
+
+    <script>
+
+        //trying Event listener using fucntion rather than arrow fucntion
+
+        //fucntion to change color
+        function click_change_color() {
+            a.style.backgroundColor = "red";
+        }
+
+        let a = document.querySelector(".box");
+        //adding the event listner
+        a.addEventListener("click", click_change_color)
+
+        //removing the event listner
+        a.removeEventListener("click", click_change_color)
+
+    </script>
+</body>
+
+</html>

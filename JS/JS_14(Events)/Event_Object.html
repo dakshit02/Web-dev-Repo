@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Object</title>
+</head>
+<body>
+    <button id="butt">CLICK ME</button>
+
+    <script>
+        let button = document.getElementById("butt");
+
+        button.addEventListener("click",(event)=>
+    {
+        console.log(event);
+        console.log("Event type:",event.type);
+        console.log("Clicked Element :",event.target);
+    })
+    </script>
+</body>
+</html>

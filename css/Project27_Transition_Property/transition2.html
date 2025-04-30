@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition2</title>
+    <style>
+        .box
+        {
+            background-color: blueviolet;
+            color: aliceblue;
+            height:120px;
+            width: 220px;
+            padding: 20px 20px;
+            border: 2px solid black;
+            margin-left: 100px;
+            transition-property:background-color,transform,color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .box:hover{
+            /* this is used for transition  */
+            transform: scaleX(1.5) scaleY(1.6);
+            background-color: rgba(56, 212, 176, 0.593);
+            color: rgb(91, 167, 234);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>About Transition</h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quos eos dolores quod, nesciunt odit placeat
+        eius facilis quas quaerat. Distinctio, labore quae.
+    </div>
+
+</body>
+
+</html>

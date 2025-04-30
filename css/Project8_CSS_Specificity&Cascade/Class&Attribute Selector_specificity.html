@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity 6</title>
+    <style>
+        
+        [data-x=a]  /* This is Attribute Selector */
+        {
+            color: green;
+        }
+        .c1            /* This is Class Selector */
+        {
+            color: red;
+        }
+
+        /* Here .c1 thats is Class Selctor will win over [data-x=a] that is Attribute Selector becsue they have same specificity=10
+        but due to Position effect .c1 won if [data-x=a] was below .c1 it would have won  */
+    </style>
+</head>
+<body>
+    <h1 class="c1" data-x="a">This is about Specificity</h1>
+</body>
+</html>

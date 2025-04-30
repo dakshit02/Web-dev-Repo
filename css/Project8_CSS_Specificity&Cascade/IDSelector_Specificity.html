@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity 4</title>
+    <style>
+        #d1 {
+            color: green;
+        }
+
+        .c1 {
+            color: red;
+        }
+
+        /* Here #d1 that is ID SELECTOR (specificity=100) will win over .c1 that is Class SELECTOR(specificity=10) */
+    </style>
+</head>
+
+<body>
+    <h1 class="c1" id="d1">This is all about Secificity</h1>
+</body>
+
+</html>

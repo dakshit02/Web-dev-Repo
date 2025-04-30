@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .container {
+            width: 70vw;
+            height: 80vh;
+            background-color: bisque;
+            position: relative;
+
+        }
+
+        .ball {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: rgba(137, 43, 226, 0.822);
+            position: absolute;
+            bottom: 0px;
+            animation: animateX 3s linear  infinite, animateY 1s ease-out  infinite alternate;
+
+            /*animation-name: animateY;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction:alternate-reverse */
+            /* animation-name: animateX;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+          
+          animation-duration: 1s;   */ 
+        } 
+         
+            @keyframes animateY {
+                from {
+                    bottom: 0px;
+                }
+
+                to {
+                    bottom: 80%;
+                }
+
+            }
+
+            @keyframes animateX {
+
+                from {
+                    left: 0;
+                }
+
+                to {
+                    left: 100%;
+                }
+
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

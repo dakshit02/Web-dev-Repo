@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeout</title>
+    <style>
+        .box
+        {
+            border: 2px solid black;
+            padding: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatainer">
+        <div class="box">This is a box</div>
+    </div>
+
+    <script>
+        //script to get random color:-
+        function diff_Color() {
+            let val1 = Math.floor(0 + Math.random() * (255 - 0));
+            let val2 = Math.floor(0 + Math.random() * (255 - 0));
+            let val3 = Math.floor(0 + Math.random() * (255 - 0));
+
+            return `rgb(${val1},${val2},${val3})`
+        }
+        
+        //using setInterval to set 
+        setInterval(()=>{
+            document.querySelector(".box").style.backgroundColor = diff_Color() ;
+        },3000);
+    </script>
+</body>
+
+</html>

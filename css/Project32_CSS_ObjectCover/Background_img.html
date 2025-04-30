@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundImage</title>
+    <style>
+        .container
+        {
+            height: 634px;
+            width: 688px;
+            border: 2px solid black;
+            background-image: url(sampleimg.jpg);
+            background-position: center center;
+
+            /* the above image is repeating itself as it is smaller than the
+            container to avoid this we will use 
+            background-repeat: no-repeat*/
+
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

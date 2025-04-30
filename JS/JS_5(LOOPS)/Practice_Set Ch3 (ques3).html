@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS queston3</title>
+</head>
+
+<body>
+    <script>
+        let correct_number = 20;
+        let num = parseInt(prompt("Enter a number:"));
+        /*do {
+            if (num == correct_number) {
+                console.log("Correct Number");
+                break;
+            }
+            else {
+                num = parseInt(prompt("Try Again"));
+            }
+        } while (num != correct_number)
+        console.log("Correct Number");
+        */
+
+        //another method:-
+        if (num == correct_number) {
+            console.log("Correct number");
+        }
+        else {
+            while (num != correct_number) {
+                num = parseInt(prompt("Try Again"));
+            }
+            console.log("Correct Number");
+        }
+
+    </script>
+</body>
+
+</html>

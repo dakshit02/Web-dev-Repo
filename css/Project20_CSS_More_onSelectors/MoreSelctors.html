@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        .boxes:first-child {
+           /* background-color: red;    this will colour red all the divs within tha class boxes */
+           color: hotpink;
+        }
+        .box:first-child
+        {
+            background-color: greenyellow;
+            /* this will only colour yellowgreen the forst div within the boxes
+            because here we are targeting the box not boxes */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+    </div>
+</body>
+
+</html>

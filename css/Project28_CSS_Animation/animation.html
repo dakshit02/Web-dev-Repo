@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @keyframes demo {
+            from{
+                background-color: red;
+            }
+            to {
+                background-color: green;
+            }
+
+    }
+     */
+
+     @keyframes demo {
+        0%{
+            background-color: red;
+        }
+        25%{
+            background-color: yellow;
+        }
+        50%{
+            background-color: grey;
+        }
+        100%{
+            background-color:green;
+        }
+         
+     }
+        
+        div
+        {   
+            animation-name:demo;
+            animation-duration: 4s;
+            animation-iteration-count:infinite;
+            /* animation-delay:-2s ; */
+            animation-direction:alternate-reverse;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+            height: 200px;
+            width:200px;
+            background-color: red;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div>this is div</div>
+</body>
+</html>

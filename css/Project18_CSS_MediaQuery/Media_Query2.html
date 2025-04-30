@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query2</title>
+    <style>
+
+        @media screen and (max-width:300px){
+            .boxes
+            {
+                flex-direction: column;
+            }
+        }
+        .box
+        {
+            width: 50vw;
+            height: 40vh;
+            border:2px solid black;
+            background-color: blueviolet;
+        }
+        .boxes
+        {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

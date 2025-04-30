@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About rem</title>
+    <style>
+
+        html
+        {
+            font-size: 24px; 
+            /* this is trick can be used to seet the size for the root element (html) 
+            genereally it is 16 px*/
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .d1
+        {
+            background-color: yellowgreen;
+            border: 5px solid black;
+            box-sizing: border-box;
+            width:100vw;
+            height: 40vh;
+        }
+        div >p 
+        {
+            font-size: 2rem; 
+            /* this is root em means what ever the size of root will be it  will be the time into it 
+            generally the root font size is 16 px this means here 2rem means 32px size of the tag para
+             */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur molestias est. Doloremque, voluptates, eligendi quam quidem repellendus id veritatis, iste praesentium velit quisquam blanditiis harum non autem maxime vitae ex? Iste cum consequatur nemo at mollitia illo perspiciatis repudiandae qui saepe ex pariatur asperiores doloribus beatae repellat nihil quaerat laboriosam dolore illum, labore aliquid consectetur?
+        </p>
+    </div>
+</body>
+</html>

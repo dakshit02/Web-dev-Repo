@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CSS 2</title>
+    <style>
+
+        /* Element Selector */
+        div {
+            background-color: aquamarine;
+        }
+
+
+
+        /* Class selector */
+        .red {
+            background-color: red;
+        }
+        h1.blue {
+            color: azure;
+            background-color: blue;
+        }
+
+
+
+        /* ID Selector */
+        #yellow {
+            background-color: yellow;
+        }
+
+
+
+        /* Child Selector */
+        span>p {
+            background-color: blueviolet;
+        }
+
+
+
+        /* Descendant Selector */
+        div p {
+            background-color: chocolate;
+        }
+
+
+
+        /* Universal Selector  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Pseudo Selector */
+        a:visited
+        {
+            color: rgb(205, 50, 50);
+        }
+
+        a:link
+        {
+            color:green;
+        }
+
+        a:active
+        {
+            color:yellow;
+        }
+
+        a:hover
+        {
+            background-color: black;
+        }
+
+        p:first-child
+        {
+            background-color: blueviolet;
+        }
+        
+        p:first-child::first-letter
+        {
+            color: white;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        Hi I am div
+    </div>
+
+    <div class="red">
+        Hi I am another div
+    </div>
+
+    <div id="yellow">
+        Hi I am another div 2
+    </div>
+
+    <span>
+        This is Span
+        <p>This is to explain Child Selector !</p>
+    </span>
+
+    <div>
+        <article>
+            <p>This is demonstrate Descendant Selectro</p>
+        </article>
+    </div>
+
+    <h1 class="blue">HI THIS IS NEW METHOD </h1>
+
+    <a target="_blank" href="https://www.google.com/">GOOGLE</a>
+    <a href="https://www.facebook.com">FACEBOOK</a>
+
+    <main>
+        <p> THIS IS MAIN'S FIFRST CHILD</p>
+        <P> THIS IS MAIN'S SECOND CHILD</P>
+    </main>
+
+</body>
+
+</html>

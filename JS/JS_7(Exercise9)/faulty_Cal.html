@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let a = prompt("Enter  1st number");
+        let b = prompt("Enter 2nd number");
+        let c = Math.random();
+        let d = prompt("Select any one: 1 for addition\n2 for multiplication\n3 for subtraction\n 4 for division");
+        let addition = a - b;
+        let multiplication = a + b;
+        let subtraction = a / b;
+        let divide = a ** b;
+
+
+
+        if (c < 0.1) {
+            if (d == "1") {
+                let result = addition;
+            }
+            else if (d == "2") {
+                let result = multiplication;
+            }
+            else if (d == "3") {
+                let result = subtraction;
+            }
+            else if(d == "4") {
+                let result = divide ;
+            }
+            
+            console.log(result);
+        }
+
+        if (c > 0.1) {
+            if (d == "1") {
+                let result = a+b;
+            }
+            else if (d == "2") {
+                let result = a*b;
+            }
+            else if (d == "3") {
+                let result = a-b;
+            }
+            else if(d == "4") {
+                let result = a/b ;
+            }
+            
+            console.log(result);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+        .box {
+            padding: 14px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is a box</div>
+    <script>
+        //function for random color
+        function random_color() {
+            let val1 = Math.floor(0 + Math.random() * (255 - 0));
+            let val2 = Math.floor(0 + Math.random() * (255 - 0));
+            let val3 = Math.floor(0 + Math.random() * (255 - 0));
+
+            return `rgb(${val1},${val2},${val3})`
+        }
+
+        let a = document.querySelector(".box");
+
+        setInterval((e)=>
+        {
+
+            a.style.backgroundColor= random_color();
+
+        },1000)
+
+    
+    </script>
+</body>
+
+</html>

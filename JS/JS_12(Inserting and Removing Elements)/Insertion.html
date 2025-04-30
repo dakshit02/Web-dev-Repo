@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Method</title>
+</head>
+
+<body>
+    <div class="box1">Hi I am a part of HTML</div>
+    <div class="box2">Hi I am aslo a part of HTML</div>
+    <div class="box3">Hi I too am part of HTML</div>
+
+    <script>
+        //append
+        let div = document.createElement('div'); // create
+        div.className = "div1";//set Class
+        div.innerHTML = "<span> Hello using <b> APPEND </b> </span>";
+        document.body.append(div); //inserts at the end of the node
+
+        //prepend
+        let div2 = document.createElement('h1'); //create
+        div2.setAttribute("class", "heading");   //set Class
+        div2.innerHTML = "This is Heding PREPEND at the Top";
+        document.body.prepend(div2) //inserts at the begning of the node
+
+        //before
+        let div3 = document.createElement('div')
+        div3.className = "div3";
+        div3.innerHTML = "This is using <b> Before </b>"
+        document.querySelector(".box1").before(div3); //inserts before the node
+
+        //after
+        let div4 = document.createElement('div')
+        div4.className = "div4";
+        div4.innerHTML = "This is using <b> After </b>"
+        document.querySelector(".box2").after(div4); //inserts after the node
+
+
+        //replaceWith
+        let div5 = document.createElement('div')
+        div5.className = "div5";
+        div5.innerHTML = "This is using <b> replaceWith </b>method and replaced .box3 "
+        document.querySelector(".box3").replaceWith(div5); //replaces the node 
+
+    </script>
+
+
+</body>
+
+</html>

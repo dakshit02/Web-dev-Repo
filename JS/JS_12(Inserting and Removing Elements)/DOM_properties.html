@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements using JS </title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="box">Hi I am a Box</span>
+        <div class="box">Hi I am a Box</div>
+    </div>
+
+    <script>
+        //inner HTML
+        console.log(document.querySelector(".container").innerHTML);
+        console.log(document.querySelector(".box").innerHTML);
+
+        //outer HTML
+        console.log(document.querySelector(".container").outerHTML);
+        console.log(document.querySelector(".box").outerHTML);
+
+        //innerText
+        console.log(document.querySelector(".box").innerText);
+        console.log(document.querySelector(".container").innerText);
+
+        //tagName
+        console.log(document.querySelector(".container").tagName);
+        console.log(document.querySelector(".box").tagName);
+
+        //nodeName
+        console.log(document.querySelector(".container").nodeName);
+        console.log(document.querySelector(".box").nodeName);
+
+        //textContent
+        console.log(document.querySelector(".container").textContent);
+        console.log(document.querySelector(".box").textContent);
+
+        //changing the text using innerHTML
+        document.querySelector(".box").innerHTML = "Hi my name is Dakshit"
+        console.log(document.querySelector(".box").innerHTML); // will replace the new text with old one
+        
+        
+        //Hidden Property
+        console.log(document.querySelector(".box").hidden) //will return false
+        document.querySelector(".box").hidden=true ; // will hide the .box(obviously the first one only as querySlector choose the first of the kind)
+        console.log(document.querySelector(".box").hidden) //now it will return true
+    </script>
+</body>
+
+</html>

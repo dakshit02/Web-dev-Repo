@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigationbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--bcolor);
+            color: var(--color);
+            height: 90px;
+            font-family:"Noto Serif Hentaigana", serif;  
+            box-shadow: var(--navshadow);
+        }
+
+        div ul {
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+        }
+
+        .brandname {
+            align-self: center;
+            padding: 40px;
+            font-size: xx-large;
+        }
+
+        .navlinks {
+            align-self: center;
+            padding: 30px;
+            font-size: large;
+        }
+
+        div ul li {
+
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        div ul li:hover {
+            /* border: var(--borderhov); */
+            background-color: var(--hoverbcolor);
+            color: var(--hovercolor);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigationbar">
+        <div class="brandname">Brand name</div>
+        <div class="navlinks">
+            <ul class="ul_list">
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Contacts</li>
+                <li><a href=""></a>Login</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

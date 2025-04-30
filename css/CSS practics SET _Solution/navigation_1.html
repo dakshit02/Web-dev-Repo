@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body,ul{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            list-style-type: none;
+            
+        }
+            
+        .n1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #184c36;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(14, 84, 1, 0.855); 
+        }
+        .navlinks {
+            display: flex;
+            gap: 20px;
+        }
+        .navlinks a{
+            text-decoration: none;
+            font-size: larger;
+            padding: 8px 12px;
+            border-radius: 5px;
+            color:greenyellow
+            
+        }
+        .navlinks a:hover
+        {
+            color: rgb(183, 239, 145);
+            background-color: #21e44875;
+        }
+        .s1
+        {
+            color: white;
+            font-size: xx-large;
+        }
+        div img
+        {
+            height: 400px;
+            width: 200px;
+            padding: 100px 120px 200px 650px ;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="n1">
+        <span class="s1">Spotify</span>
+        <ul class="navlinks">
+            <li><a href="Home">Home</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="#Login">Login</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>    
+    </nav>
+    <div>
+        <img src="Spotify player.jpeg" alt="Spotify">
+    </div>
+    
+</body>
+
+</html>

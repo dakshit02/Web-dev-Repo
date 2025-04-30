@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Text Overflow */
+
+
+        .box {
+
+            overflow: hidden;
+            /*We have to specify this always*/
+            text-overflow: ellipsis;
+            /*Ellipse*/
+            border: 4px solid red;
+            height: 15cm;
+            width: 45px;
+        }
+
+        .box1 {
+
+            overflow: scroll;
+            /*We have to specify this always*/
+            text-overflow: clip;
+            /*Clip*/
+            border: 4px solid red;
+            height: 15cm;
+            width: 45px;
+        }
+
+        /* WORD BREAK */
+
+        .box2 {
+            border: 4px solid red;
+            height: 20cm;
+            width: 45px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea laudantium facere nostrum culpa
+        recusandae quas laborum facilis dignissimos ullam, ratione at amet, necessitatibus odit assumenda, aliquid
+        labore consequatur eius.</p>
+    <p class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea laudantium facere nostrum culpa
+        recusandae quas laborum facilis dignissimos ullam, ratione at amet, necessitatibus odit assumenda, aliquid
+        labore consequatur eius.</p>
+    <p class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea laudantium facere nostrum culpa
+        recusandae quas laborum facilis dignissimos ullam, ratione at amet, necessitatibus odit assumenda, aliquid
+        labore consequatur eius.</p>
+</body>
+
+</html>

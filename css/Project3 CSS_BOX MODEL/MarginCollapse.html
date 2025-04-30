@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        .box{
+            background-color: chartreuse;
+        }
+        .box1
+        {
+            color: red;
+            padding: 10px;
+            border: 4px solid black;
+            margin: 25px;
+        }
+        .box2
+        {
+            color: black;
+            padding: 10px;
+            border: 4px solid black;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box box1">This is Box1</div>
+    <div class="box box2">This is Box2</div>
+
+    <!--Margin collapse means when two boxes margins are collapsed together 
+    they are overlapped onto each other not ADDED means 
+    which evers box margin is bigger it will take the space and the smaller margin box
+    will be undernath it NOT ADDED!-->
+    
+</body>
+</html>

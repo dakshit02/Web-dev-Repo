@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">This is a div</div>
+
+    <script>
+
+        var i = 0;
+        // setInterval using arrow function
+        setInterval(() => {
+            console.log("Hello after 3 seconds !");
+        }, 3000);
+
+        //setInterval using the traditional fucntion
+        function change_innerhtml() {
+            document.querySelector(".box").innerHTML = `Hi my name is dakshit ${i}`;
+            document.querySelector(".box").style.backgroundColor = "red"
+            i++;
+        }
+
+        setInterval(change_innerhtml, 3000);
+
+        setTimeout(() => {
+            console.log("Hello after 3 seconds from setTimeout !")
+        }, 3000)
+
+    </script>
+</body>
+
+</html>

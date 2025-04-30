@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            margin: 12px;
+            padding: 13px;
+            text-align: center;
+        }
+
+        .shadow {
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 1px 2px 8px 1px red;
+        }
+        .shadow1
+        {
+            box-shadow: 5px 5px 15px 2px inset rebeccapurple;
+        }
+
+        /* text shadow */
+        .p1{
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 4px 2px 6px rgb(220, 29, 112);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box shadow">
+        This is demonstration of shadows
+    </div>
+    <div class="box shadow1">
+        This is box 2 
+    </div>
+    <p class="p1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga ducimus vel facilis, assumenda neque pariatur laborum tempora rerum quam commodi corporis nulla nam quisquam iure! Facere rem in nesciunt deleniti enim quos voluptates saepe quasi earum debitis vitae excepturi, exercitationem ipsum voluptatibus necessitatibus omnis!
+    </p>
+</body>
+
+</html>

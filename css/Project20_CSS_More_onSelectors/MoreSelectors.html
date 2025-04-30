@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreSelectors2</title>
+    <style>
+        .box1::first-line
+
+        /* First -line */
+            {
+            color: chocolate;
+            background-color: yellowgreen;
+        }
+
+        .papa *
+
+        /* universal Selectors */
+            {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Attribute Selector */
+        [data-x="attribute"]
+        {
+            color: white;
+            background-color: rgba(15, 105, 179, 0.688);
+        }
+
+        /* Grouping Selectors */
+        div,a,p{
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime vero numquam itaque
+            omnis delectus quasi ut recusandae aliquam at a asperiores tempore, illum architecto, sequi corporis
+            incidunt laborum. Sed totam unde illum atque delectus! Amet, labore! Veritatis recusandae, labore assumenda
+            commodi nisi perspiciatis sequi voluptatibus earum reiciendis, porro officiis amet molestiae reprehenderit
+            odio. Consectetur eos dolorum possimus eum quod porro quibusdam doloremque accusamus optio inventore nihil,
+            natus, ratione numquam, maxime alias aut perferendis. Ex, voluptatem cupiditate iure delectus reprehenderit
+            amet magnam eveniet! Dolor nemo omnis eum quae officiis alias minus optio laboriosam veritatis et. Sed
+            commodi et molestiae!</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+    <br>
+    <div class="papa">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem rerum veritatis sapiente maxime nobis
+            illum, ullam neque quam harum dicta ipsa explicabo!</p>
+        <div>hi thi is div</div>
+        <a href="youtube.com">Youtube</a>
+
+    </div>
+    <br>
+    <div data-X="attribute">
+        this is example of attribute selector!
+    </div>
+</body>
+
+</html>

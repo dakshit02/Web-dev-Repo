@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Forward Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .container {
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+            position: relative;
+            overflow: hidden; /* Prevents the ball from going out of bounds */
+        }
+
+        .ball {
+            background-color: red;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            animation: bounceForward 3s infinite ease-in-out;
+        }
+
+        /* Keyframes for bouncing forward */
+        @keyframes bounceForward {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(150px, -150px);
+            }
+            50% {
+                transform: translate(300px, 0);
+            }
+            75% {
+                transform: translate(450px, -100px);
+            }
+            100% {
+                transform: translate(600px, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

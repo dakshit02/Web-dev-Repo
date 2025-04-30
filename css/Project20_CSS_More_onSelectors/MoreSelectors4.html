@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors 4</title>
+    <style>
+        /* .fordiv div::selection
+        {
+            color: yellow;
+            background-color: black;
+        } */
+
+        ::selection {
+            /* this is for the page */
+            color: red;
+            background-color: rgba(0, 0, 255, 0.314);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fordiv">
+        <div class="d1">this is div 1</div>
+        <div class="d2">this is div 2</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, pariatur ut. Non aliquid placeat ea iure
+            recusandae. Ipsa reprehenderit aspernatur molestiae itaque.</p>
+    </div>
+    <div>
+        this is also div but it wont aply on it
+    </div>
+</body>
+
+</html>

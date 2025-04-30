@@ -1,0 +1,530 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Images/background\ image.jpg);
+    height: 720px;
+    width: 100vw;
+    background-position: center center;
+    /* background-size:max(1200px,100vw) ; */
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mainbox {
+    height: 720px;
+    ;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.67;
+    position: absolute;
+    top: 0;
+    box-shadow: inset 0px 20px 12px 20px rgb(0, 0, 0);
+    overflow: hidden;
+
+
+}
+
+nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40em;  */
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+    height: 80px;
+    border: none;
+}
+
+.logo img {
+    width: 9.25rem;
+    height: 2.5rem;
+    /* color: rgb(229, 9, 20);
+    fill: currentColor; */
+    display: block;
+}
+
+.nav_buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.lan_button {
+    /* opacity: 0.4; */
+    background-color: rgba(0, 0, 0, 0.448);
+    width: 100px;
+    height: 35px;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.Signin_button {
+    background-color: rgba(244, 6, 18, 0.885);
+    color: white;
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.box {
+    /* position: absolute; */
+    /* bottom:20px; */
+    /* height: calc(100%-80px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    width: 100vw;
+    color: white;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    /* max-height: 700px; */
+    margin: 10rem auto 0 auto;
+}
+
+.item1 {
+
+    text-align: center;
+    font-size: 3.5rem;
+    /* font-weight: 900; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.5rem;
+
+}
+
+.item2 {
+    text-align: center;
+    /* font-size: 1.5rem; */
+    font-weight: 500;
+    font-size: 20px;
+    /* font-weight: 400; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.item3 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 450;
+    line-height: 1.5;
+}
+
+.item4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.email_input {
+
+    border-radius: 5px;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.327);
+    border: 1px solid gray;
+    color: white;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+input::placeholder {
+    color: rgb(204, 199, 199);
+
+}
+
+.butt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(244, 6, 18, 0.885);
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.next_arrow {
+    height: auto;
+    width: 20px;
+
+}
+
+.redbar {
+    position: relative;
+    margin-top: 10.5em;
+    border-top: 6px solid rgba(255, 0, 0, 0.811);
+    border-radius: 800%;
+    z-index: 2;
+    /* box-shadow: inset 8px 21px 90px 2px #2200ff7c; */
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.289) 50%, #e50914);
+
+}
+
+/* .main_2 {
+   
+    height: 100vh;
+    width: 100vw;
+}  */
+.trending_section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px;
+    height: 40px;
+    /* background-color: aquamarine; */
+}
+
+.movie_section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    /* background-color: green; */
+    max-width: 80vw;
+    margin: auto;
+    margin-top: -40px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.movie_section img {
+    border-radius: 10px;
+}
+
+.mrj_section {
+
+
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px;
+    height: 40px;
+
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    gap: 15px;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.mrj1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    padding: 15px 10px 5px 16px;
+    gap: 15px;
+    color: white;
+    /* background-color: rgba(179, 0, 255, 0.911); */
+    background: radial-gradient(circle at top left, rgba(46, 9, 61, 0.9), rgba(14, 3, 25, 0.95));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+}
+
+.mrj1 p {
+    color: rgba(203, 186, 186, 0.988);
+    font-weight: 500;
+}
+
+.grid img {
+    height: 6em;
+    width: 6em;
+    margin: 54px 0px 0px 169px;
+}
+
+.FAQ {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px;
+    height: 40px;
+    margin-bottom: -40px;
+}
+
+.main_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+
+}
+
+.main3_items {
+
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(46, 45, 45);
+    justify-content: space-between;
+    width: 78vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+
+}
+
+.plus_but {
+    font-size: xx-large;
+}
+
+.main_4 {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 80vw;
+    /* margin: auto; */
+    /* max-width: 745px; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.main_4_item_1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.email_input2 {
+    border-radius: 5px;
+    width: 35vw;
+    background-color: rgb(21, 20, 20);
+    border: 1px solid gray;
+    color: white;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+.main_4_item_2 {
+    display: flex;
+    gap: 7px;
+}
+
+footer {
+    max-width: 80vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    gap: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+footer a {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.end {
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:624px) {
+
+    .item4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .email_input {
+        width: 80vw;
+
+    }
+
+    .butt {
+
+        width: 50vw;
+        /* height: 5vh; */
+
+    }
+
+    .box {
+
+        margin-top: 5em;
+        /* align-items: center;
+        justify-content: center; 
+        margin: auto; */
+
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+    .box {
+
+        margin-top: 1em;
+        /* align-items: center;
+        justify-content: center; 
+        margin: auto; */
+
+    }
+}
+
+@media screen and (max-width:1418px) {
+
+    .grid {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 15px; */
+        /* max-width: auto; */
+        /* margin: auto;
+        margin-top: -40px; */
+    }
+}
+
+@media screen and (max-width:1280px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .main_4_item_2 {
+        display: flex;
+        flex-direction: column;
+        /* gap: 7px; */
+    }
+
+    .email_input2 {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width:515px) {
+
+    .logo img {
+        width: 120px;
+        
+
+    }
+
+    .lan_button {
+        width: 80px;
+        font-weight: 450;
+    }
+
+    .Signin_button {
+
+        width: 80px;
+        font-weight: 600;
+       
+    }
+}
+@media screen and (max-width:514px) {
+    .item1 {
+
+       
+        font-size: 1.75rem;
+        
+    
+    }
+    
+    .item2 {
+       
+        font-size: 15px;
+        
+        
+    }
+    
+    .item3 {
+        
+        font-size: 0.8rem;
+        
+    }
+}

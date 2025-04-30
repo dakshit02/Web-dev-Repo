@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming lines</title>
+    <style>
+        .grid_contain
+        {
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: [pehla] auto [dusra] auto;
+        }
+        .items
+        {
+            padding: 20px;
+            border: 2px solid black;
+
+        }
+        .item1
+        {
+            grid-column: pehla/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_contain">
+        <div class="items item1">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+    </div>
+</body>
+</html>

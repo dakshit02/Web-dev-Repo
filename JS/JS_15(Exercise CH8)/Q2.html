@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Storage</title>
+    <style>
+        #input_but {
+            background-color: rgba(231, 167, 83, 0.622);
+        }
+    </style>
+</head>
+
+<body>
+    <div>Enter the Website URL <input id="input_but" type="text"></div>
+    <h1>BOOKMARKS</h1>
+    <div class="container">
+        
+    </div>
+    <script>
+        let a = document.getElementById("input_but");
+
+        a.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                
+                alert("OK");
+                let b = event.target.value;
+                let newlink = document.createElement('a');
+                newlink.href = b;
+                newlink.innerText = b; // Set link text
+                document.querySelector(".container").append(newlink);
+                event.target.value = "";
+                
+                
+            }
+            // else{
+            //     alert("Press Enter to register the book mark");
+            // }
+        })
+    </script>
+</body>
+
+</html>

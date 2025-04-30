@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Local Vaiable</title>
+    <style>
+
+        :root{
+            --global_color:red;
+            --global_seccolor:green;
+        }
+
+        *{
+            margin: 0;padding: 0;
+        }
+        .nav
+        {
+            /* local variable */
+            --color:yellow;
+            background-color: var(--color);
+        }
+        .d1
+        {
+           
+            color: var(--global_color);  /* this is local variable but using sameas global variabele name  */
+            --global_color:white;
+            background-color: var(--global_seccolor);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contacts</li>
+            <li>Login</li>
+        </ul>
+    </div>
+    <div class="d1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga amet voluptatem totam sint, quia vel praesentium, nesciunt molestiae veniam soluta nemo quae! Facilis nam commodi tempora id beatae, perferendis vel, explicabo quod nesciunt hic quas! Repudiandae placeat cum voluptas dolores, quae repellat nihil expedita nostrum eius architecto inventore sint, facilis vel eos explicabo quaerat? Quis, ullam.
+    </div>
+</body>
+</html>

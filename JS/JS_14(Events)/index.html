@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Type your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="container">
+        <div class="box">Hey I am a box</div>
+    </div>
+    <button id="butt">I am a button</button>
+
+    <div class="container1">This is container 1</div>
+
+
+    <script>
+
+        //MOUSE EVENTS
+
+        let button = document.getElementById("butt");
+
+        //click
+        button.addEventListener("click", () => {
+            alert("Hi I was clicked !");
+            // button.innerText= "Hi I was clicked";
+        })
+
+        //click
+        button.addEventListener("click", () => {
+            document.querySelector(".box").innerHTML = "<span>hi i was changed after click</span> ";
+        })
+
+        //double click
+        let a = document.querySelector(".container1");
+        a.addEventListener("dblclick", () => {
+            a.style.backgroundColor = "red";
+        })
+
+        //contextmenu - Fired when the user attempts to open a context menu.
+        button.addEventListener("contextmenu", () => {
+            alert("Did you try to open context menu?")
+        })
+
+
+        //KEYBOARD EVENTS
+
+        //keydown-Fired when a key is pressed.
+        document.addEventListener("keydown", (e) => {
+            console.log(e.key, e.keyCode);
+        })
+
+    </script>
+
+</body>
+
+</html>

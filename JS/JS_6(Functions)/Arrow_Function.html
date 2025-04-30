@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+
+    <script>
+
+        //Traditional Function
+        function sayHello() {
+            console.log("Hello from the Traditional Function");
+        }
+        sayHello();
+
+        //Arrow Function
+        const say_Hello = () => {
+
+            console.log("Hello from Arrow Function");
+        }
+        say_Hello();
+
+        //Arrow Function with one Parameter
+        const greet = name => {
+            console.log(`Hi ${name} good morning !`);
+        }
+        greet("Dakshit");
+
+        //Arrow Function with Multiple Parameters
+        const add = (a, b) => {
+            return a + b;
+        }
+        console.log("The sum is:",add(2,3));
+
+        //Arrow Function with one line of Code
+        const square = num => num * num
+        console.log("The square is :", square(5));
+
+        // Arrow Function Inside Another Function
+        const number = [1,2,3,4];
+        const doubled = number.map(num =>num*2);
+        console.log(doubled);
+
+
+
+
+    </script>
+</body>
+
+</html>

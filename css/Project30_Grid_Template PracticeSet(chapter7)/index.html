@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Grid Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            display: grid;
+            grid-template-areas: "nav nav"
+                                "main main";
+
+        }
+
+        .NavigationBar {
+            grid-area: nav;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            align-items: center;
+            gap: 80vw;
+            background-color: aquamarine;
+            height: 80px;
+        }
+
+        div ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .mainContent {
+            grid-area: main;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 200px;
+            gap: 659px;
+            margin: 20px;
+        }
+
+        .bcolor{
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="NavigationBar">
+            <div>Brand Name</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div class="mainContent">
+            <div class="div1 bcolor"></div>
+            <div class="div2 bcolor"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

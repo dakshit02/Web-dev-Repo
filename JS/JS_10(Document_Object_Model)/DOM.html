@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT DOM</title>
+
+</head>
+
+<body>
+    <div id="new_div">This is a div</div>
+    <div class="class_div">This is a class div</div>
+    <script>
+        document.title = "NEW title (DOM)";
+        console.log(document.title);
+        console.log(document.body);
+        document.body.style.backgroundColor = "green";
+        document.getElementById("new_div").style.backgroundColor = "red"; // targeting div by getElementbyid()
+        //document.getElementsByClassName("class_div")[0].innerHTML = "This is my new text";
+        let element = document.getElementsByClassName("class_div");
+        for (i = 0; i <element.length; i++) 
+        {
+            element[i].innerHTML="hi my name is daku";
+        }
+
+    </script>
+
+</body>
+
+</html>

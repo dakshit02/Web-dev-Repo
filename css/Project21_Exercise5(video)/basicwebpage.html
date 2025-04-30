@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: blueviolet;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            font-family: "Noto Serif Hentaigana", serif;
+            font-weight: bold;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+
+        div ul {
+            display: flex;
+            gap: 40px;
+            list-style-type: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+
+        }
+
+        .md0 {
+            background-color: rgba(137, 43, 226, 0.496);
+            position: relative;
+            top: 10px;
+            height: 600px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        .md1 {
+            float: left;
+            background-color: red;
+            padding: 12px;
+            margin-left: 30px;
+            margin-top: 30px;
+            width: 43vw;
+            height: 500px;
+
+        }
+
+        .md2 {
+            float: right;
+            background-color: blue;
+            padding: 12px;
+            margin-right: 30px;
+            margin-top: 30px;
+            width: 43vw;
+            height: 500px;
+        }
+
+        .aftermain {
+            border: 2px solid black;
+            margin: 40px;
+            margin-bottom: 900px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 5px;
+        }
+
+        .fixedsticker {
+            width: 100px;
+            /* Reduce radius */
+            height: 100px;
+            border-radius: 50%;
+            /* Makes it circular */
+            border: 4px solid #333;
+            /* Optional: Add a border */
+            position: fixed;
+            bottom: 20px;
+            /* Set distance from the bottom */
+            right: 20px;
+            /* Set distance from the right */
+        }
+
+        .foot {
+            background-color: grey;
+            padding: 400px 40px 40px 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="d1">Brand Name</div>
+        <div class="d2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="maincontent">
+        <div class="md0">
+            <div class="md1"></div>
+            <div class="md2"></div>
+        </div>
+        <br>
+        <div class="aftermain">
+            Welcome to this Sigma Web Development Express!
+        </div>
+        <img class="fixedsticker "
+            src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?s=2048x2048&w=is&k=20&c=l5yp8MwBrutZLRkiF06nRcJ8eS0iYtcoMgklFxVvh8o="
+            alt="">
+    </main>
+    <footer>
+        <div class="foot">
+            This is FOOT
+        </div>
+    </footer>
+</body>
+
+</html>

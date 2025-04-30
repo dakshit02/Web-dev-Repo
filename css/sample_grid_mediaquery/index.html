@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Test</title>
+    <style>
+        /* Default grid layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        .box {
+            display: flex;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Media query for screens with max-width 800px */
+        @media screen and (max-width: 800px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log(b.concat(z,"Mahi","Rahul"));

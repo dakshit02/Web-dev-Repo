@@ -1,0 +1,7 @@
+:root {
+    --bcolor: rgba(217, 109, 151, 0.655);
+    --color: rgba(118, 13, 94, 0.729);
+    --hovercolor: rgba(194, 27, 147, 0.868);
+    --hoverbcolor: rgba(217, 109, 151, 0.655);
+    --navshadow: 5px 5px 15px 5px rgba(34, 14, 16, 0.362);
+}

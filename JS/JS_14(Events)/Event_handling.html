@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        .box {
+            padding: 14px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <input value="Hey" onclick="alert('I was clicked')" type="button" > -->
+
+    <!-- Events within the HTML  attribute -->
+    <button onclick="alert('you clicked button')">HI</button>
+
+    <!-- Events can be handeled through the onclick property -->
+    <div class="box">this is a box</div>
+
+    <script>
+        document.querySelector(".box").onclick = function () {
+            alert("Hi");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

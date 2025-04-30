@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Template</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-areas: "nav nav nav nav"
+                                "main_content main_content empty sidebar"
+                                "foot foot foot foot";
+            
+            border: 2px solid black;
+        }
+        .item
+        {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 20px;
+        }
+        .item1
+        {
+            grid-area: nav;
+            background-color: burlywood;
+        }
+        .item2
+        {
+            grid-area: main_content;
+            background-color: rgb(222, 135, 135);
+        }
+        .item3
+        {
+            grid-area: empty;
+            background-color: rgb(181, 222, 135);
+        }
+        .item4
+        {
+            grid-area: sidebar;
+            background-color: rgb(135, 167, 222);
+        }
+        .item5
+        {
+            grid-area: foot;
+            background-color: rgb(222, 135, 192);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"> NAVIGATION BAR takes 4 cells</div>
+        <div class="item item2"> MAIN CONTENT takes 2 cell</div>
+        <div class="item item3"> EMPTY takes 1 cell</div>
+        <div class="item item4"> SIDE BAR takes 1 cell</div>
+        <div class="item item5"> FOOTER takes 4 cell</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root
+        {
+            --def_border:2px solid black;
+            --defop:0.6; /*  this is for opacity */
+        }
+        .d1{
+            border: var(--def_border);
+        }
+        .d2
+        {   
+            background-color: blueviolet;
+            opacity: var(--defop);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <h1>This is Heading! </h1>
+
+    </div>
+    <div class="d2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deleniti placeat commodi assumenda laborum,
+        quidem culpa facere illo accusamus, provident omnis eos nihil, nostrum nobis cum voluptatum? A, reprehenderit
+        doloremque.
+    </div>
+</body>
+
+</html>
